@@ -1,0 +1,42 @@
+.blist {
+    background-image: url(../images/list-items.gif) !important;
+}
+/* select */
+.x-combo-list .x-combo-list-cursor {
+	BORDER-RIGHT: #000000 1px dotted; BORDER-TOP: #000000 1px dotted; BORDER-LEFT: #000000 1px dotted; BORDER-BOTTOM: #000000 1px dotted
+}
+.x-combo-list-item {
+	MARGIN: 1px; CURSOR: pointer
+}
+/* end select */
+.search {
+    background-image:url(../images/shared/icons/grid.png) !important;
+}
+.user_add {
+    background-image:url(../images/shared/icons/user_add.gif) !important;
+}
+.user_edit {
+    background-image:url(../images/shared/icons/user_edit.png) !important;
+}
+.user_delete {
+    background-image:url(../images/shared/icons/user_delete.gif) !important;
+}
+.save {
+    background-image:url(../images/shared/icons/save.gif) !important;
+}
+.add {
+    background-image:url(../images/shared/icons/add.gif) !important;
+}
+.edit {
+    background-image:url(../images/shared/icons/cog_edit.png) !important;
+}
+.delete {
+    background-image:url(../images/shared/icons/delete.gif) !important;
+}
+.import {
+    background-image:url(../images/shared/icons/plugin_add.gif) !important;
+}
+.export {
+    background-image:url(../images/shared/icons/application_go.png) !important;
+}
+

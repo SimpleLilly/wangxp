@@ -1,0 +1,30 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+    <package name="opertable" extends="webwork-default" namespace="/opertable">
+
+       <default-interceptor-ref name="completeStack" />
+       
+        <!-- 根据tableId生成json数据 -->
+        <action name="GenerateJsonData" class="com.funtalk.action.opertable.OperTableAction" method="generateJsonData">
+		</action>
+
+		<!-- 列表页面 -->
+        <action name="OperTable" class="com.funtalk.action.opertable.OperTableAction" method="list">  
+			<result name="success">/opertable/list.jsp</result>
+			<result name="exportExcel">/opertable/toExcel.jsp</result>
+			<result name="toImport" type="chain">			
+				<param name="actionName">ImportAction_goOption</param>
+				<param name="namespace">/localdata/bacth_import</param>
+			</result>
+		</action>
+		
+        <!-- 根据sql生成json数据 -->
+        <action name="SqlGenerateJsonData" class="com.funtalk.action.opertable.OperSqlAction" method="generateJsonData"></action>		
+	</package>
+	<package name="/localdata/bacth_import" namespace="/localdata/bacth_import" extends="webwork-default">
+		<action name="ImportAction_goOption" class="com.funtalk.action.systemconfig.ImportAction" method="goOption" >
+			<result name="go">/opertable/bacth_import/import_option.jsp</result>
+		</action>
+
+	</package>
+</xwork>

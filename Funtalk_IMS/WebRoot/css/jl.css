@@ -1,0 +1,202 @@
+<STYLE>
+
+
+
+LEGEND {
+	BACKGROUND-COLOR: #f6f6f6; CURSOR: default
+}
+FIELDSET {
+	BACKGROUND-COLOR: #f6f6f6; CURSOR: default
+}
+BODY {
+	FONT-SIZE: 12px
+}
+TABLE {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px
+}
+TR {
+	FONT-SIZE: 12px
+}
+DIV {
+	FONT-SIZE: 12px
+}
+P {
+	FONT-SIZE: 12px
+}
+LI {
+	FONT-SIZE: 12px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+OPTION {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+A {
+	FONT-SIZE: 12px
+}
+FONT {
+	FONT-SIZE: 12px
+}
+
+
+TD.cal {
+font-family:arial; font-size: 8pt; color:#ffffff;}
+TD.calmonth { font-family:arial; font-size: 8pt; text-align: right; bgcolor:red}
+TD.caltoday { font-family:arial; font-size: 8pt; text-align: right; color: white; background-color:#4994DB; border-width:1; border-type:solid; border-color:#000000; }
+A.todaylink { font-family:arial; font-size: 8pt; height: 20px; color: black; }
+A.cal { text-decoration:none; color:#ffffff;}
+A.calthismonth { text-decoration:none; color:#4B4B4B; }
+A.calothermonth { text-decoration:none; color:#999999; }
+
+A:hover {
+	COLOR: #ff0000
+}
+
+A {
+	CURSOR: hand; TEXT-DECORATION: none
+}
+FONT.treeunopen {
+	COLOR: black
+}
+FONT.treeopened {
+	BACKGROUND-COLOR: darkblue; COLOR: white
+}
+FONT.treenormal {
+	COLOR: black; CURSOR: default
+}
+FONT.read {
+	FONT-STYLE: italic
+}
+FONT.must {
+	FONT-WEIGHT: bold
+}
+FONT.wish {
+	
+}
+FONT.tab {
+	CURSOR: hand; FONT-WEIGHT: bold
+}
+FONT.comment {
+	COLOR: #404040
+}
+FONT.errflag {
+	COLOR: red; CURSOR: hand; FONT-SIZE: 16px
+}
+FONT.s60 {
+	CURSOR: hand; FONT-SIZE: 14px
+}
+FONT.button {
+	CURSOR: hand; FONT-WEIGHT: bold
+}
+FONT.button2 {
+	BACKGROUND-COLOR: #e8e8e8; BORDER-BOTTOM: 1px outset; BORDER-LEFT: 1px outset; BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; COLOR: #000000; CURSOR: hand; HEIGHT: 19px; PADDING-BOTTOM: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 2px; WIDTH: 1px
+}
+FONT.button3 {
+	COLOR: darkgreen; FONT-WEIGHT: bold
+}
+FONT.pagesize {
+	COLOR: darkgreen; FONT-WEIGHT: bold
+}
+FONT.error {
+	COLOR: red
+}
+FONT.error2 {
+	COLOR: red; FONT-WEIGHT: bold
+}
+FONT.shortcut {
+	COLOR: #404040; CURSOR: hand; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+TD.head {
+	CURSOR: default; FONT-WEIGHT: bold
+}
+TD.data {
+	CURSOR: default
+}
+TD.no {
+	COLOR: darkgreen; CURSOR: hand; FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+TD.no2 {
+	COLOR: darkgreen; CURSOR: default; FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+TD.tab {
+	CURSOR: hand; FONT-WEIGHT: bold
+}
+TR.unopen {
+	BACKGROUND-COLOR: #D2DDE2
+}
+TR.opened {
+	BACKGROUND-COLOR: #E8F1F5
+}
+TR.mouseover {
+	BACKGROUND-COLOR: #D9E3E8
+}
+TEXTAREA {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #000000 1px solid
+}
+IMG.button {
+	CURSOR: hand
+}
+.s01 {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #000000 1px solid
+}
+.s02 {
+	BORDER-BOTTOM: 1px inset; BORDER-LEFT: 1px inset; BORDER-RIGHT: 1px inset; BORDER-TOP: 1px inset; FONT-FAMILY: PosterBodoni BT,Arial; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.s03 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-FAMILY: Arial; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.s04 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px
+}
+.s05 {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #000000 1px solid; CURSOR: default
+}
+.arrow1 {
+	COLOR: #505050; CURSOR: hand; FONT-FAMILY: Webdings; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.arrow2 {
+	COLOR: red; CURSOR: hand; FONT-FAMILY: Webdings; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.arrow3 {
+	COLOR: darkgreen; CURSOR: hand; FONT-FAMILY: Webdings; FONT-SIZE: 24px; FONT-WEIGHT: bold
+}
+.arrow4 {
+	COLOR: darkgreen; CURSOR: hand; FONT-FAMILY: Webdings; FONT-SIZE: 20px; FONT-WEIGHT: bold
+}
+.intro {
+	LINE-HEIGHT: 1.6
+}
+.radio {
+	CURSOR: hand
+}
+.mouseover {
+	BACKGROUND-COLOR: #ddeeff; BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; CURSOR: hand
+}
+.mouseout {
+	BACKGROUND-COLOR: #fffffe
+}
+.mouseout2 {
+	BACKGROUND-COLOR: #efefef
+}
+
+
+
+.button { BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid
+ } 
+.button2 {  font-size: 13px; background-color: #eeeeee; text-align: center; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-style: none}
+.button4 {  font-size: 13px; background-color: #339900; border-style: none; text-align: center}
+.text_likeDisabled {  color: #999999; background-color: #FFFFFF; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.likebutton2 { font-size: 13px; background-color: #eeeeee; text-align: left; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; width: auto; border-style: none}
+.likebutton2c { font-size: 13px; background-color: #eeeeee; text-align: center; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; width: auto; border-style: none}
+
+.likebutton3 { font-size: 13px; background-color: #f7f7f7; text-align: left; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; width: auto; border-style: none}
+.text_redFat { color: #FF0000; background-color: #FFFFFF; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px ; font-weight: bolder}
+.likebutton2red { font-size: 13px; background-color: #eeeeee; text-align: left; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; width: auto; border-style: none ; font-weight: bolder; color: #FF0000}
+</STYLE>

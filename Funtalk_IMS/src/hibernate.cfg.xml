@@ -1,0 +1,57 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="show_sql">true</property>
+		<property name="session_factory_name">hibernate</property>
+		<property name="connection.datasource">nsjf</property>
+		<property name="jndi.class">
+			weblogic.jndi.WLInitialContextFactory
+		</property>
+		<property name="jndi.url">t3://localhost:7001</property>
+		<property name="dialect">
+			org.hibernate.dialect.Oracle9Dialect
+		</property>
+		<mapping resource="com/sitech/bean/billing/FavIndex.hbm.xml" />
+		<mapping
+			resource="com/sitech/bean/billing/VoicefavCfeePlan.hbm.xml" />
+		<mapping
+			resource="com/sitech/bean/billing/VoicefavLfeePlan.hbm.xml" />
+		<mapping
+			resource="com/sitech/bean/billing/VoicefavIfeePlan.hbm.xml" />
+		<mapping
+			resource="com/sitech/bean/billing/CumulateValueCtrl.hbm.xml" />
+		<mapping
+			resource="com/sitech/bean/billing/FreeRateBase.hbm.xml" />
+		<mapping
+			resource="com/sitech/bean/billing/DatafavCfeePlan.hbm.xml" />
+		<mapping
+			resource="com/sitech/bean/billing/DatafavOfeePlan.hbm.xml" />
+		<mapping resource="com/sitech/pojo/rightmanage/User.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/rightmanage/UserRole.hbm.xml" />
+		<mapping resource="com/sitech/pojo/User.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/rightmanage/UserPwdHistory.hbm.xml" />
+		<mapping resource="com/sitech/pojo/rightmanage/Log.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/rightmanage/RoleFunc.hbm.xml" />
+		<mapping resource="com/sitech/pojo/rightmanage/Role.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/rightmanage/RoleLevel.hbm.xml" />
+		<mapping resource="com/sitech/pojo/rightmanage/Func.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/rightmanage/FuncType.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/rightmanage/FuncButton.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/rightmanage/CityList.hbm.xml" />
+		<mapping resource="com/sitech/dao/Org.hbm.xml" />
+		<mapping resource="com/sitech/pojo/billing/SubPrcParam.hbm.xml" />
+		<mapping
+			resource="com/sitech/pojo/billing/SubPrcParamDefRel.hbm.xml" />
+		<mapping resource="com/sitech/pojo/billing/SubPrcDef.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

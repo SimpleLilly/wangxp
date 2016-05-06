@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+ <!-- Spring ApplicationContext配置文件的路径,可使用通配符。多个路径用逗号分隔。此参数用于后面的Spring-Context loader -->
+ <context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>classpath*:applicationContext.xml</param-value>
+ </context-param>
+
+
+ <filter>
+  <filter-name>PrivilegeFilter</filter-name>
+  <filter-class>com.funtalk.filter.PrivilegeFilter</filter-class>
+  <!--ignorePages忽略控制页面集合  -->
+  <init-param>
+   <param-name>ignorePage_0</param-name>
+   <param-value>/</param-value>
+  </init-param>
+  <init-param>
+   <param-name>ignorePage_1</param-name>
+   <param-value>/index.jsp</param-value>
+  </init-param>
+  <init-param>
+   <param-name>ignorePage_2</param-name>
+   <param-value>/rightmanage/login.jspa</param-value>
+  </init-param>
+  <init-param>
+   <param-name>ignorePage_3</param-name>
+   <param-value>/login.jsp</param-value>
+  </init-param>
+  <init-param>
+   <param-name>ignorePage_5</param-name>
+   <param-value>/rightmanage/logout.jspa</param-value>
+  </init-param>
+  <init-param>
+   <param-name>ignorePage_7</param-name>
+   <param-value>/error.jsp</param-value>
+  </init-param>
+
+ </filter>
+ 
+ 
+ <filter>
+  <filter-name>webwork</filter-name>
+  <filter-class>com.opensymphony.webwork.dispatcher.FilterDispatcher</filter-class>
+ </filter>
+ 
+
+ <filter-mapping>
+  <filter-name>PrivilegeFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>webwork</filter-name>
+  <url-pattern>/*</url-pattern>
+ </filter-mapping>
+ 
+
+ <listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+ </listener>
+
+ 
+ <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <!--
+        This typically isn't required, as the taglib is included in webwork.jar.
+        If you really need a taglib configuration within web.xml, copy webwork/src/java/META-INF/taglib.tld
+        to the WEB-INF directory as webwork.tld.
+     -->
+ <taglib>
+  <taglib-uri>webwork</taglib-uri>
+  <taglib-location>/WEB-INF/lib/webwork-2.2.6.jar</taglib-location>
+ </taglib>
+
+</web-app>

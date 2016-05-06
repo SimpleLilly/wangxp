@@ -1,0 +1,525 @@
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: arial, helvetica, sans-serif
+}
+DIV {
+	FONT-SIZE: 10pt; FONT-FAMILY: arial, helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 10pt; FONT-FAMILY: arial, helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: arial, helvetica, sans-serif
+}
+TH {
+	FONT-SIZE: 10pt; FONT-FAMILY: arial, helvetica, sans-serif
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff
+}
+#jive-body {
+	BACKGROUND-IMAGE: url(../images/page-background.gif); BACKGROUND-REPEAT: repeat-y
+}
+P {
+	MARGIN-TOP: 0px
+}
+FIELDSET {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid
+}
+FIELDSET .buffer {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px
+}
+FIELDSET TEXTAREA.ta {
+	FONT-SIZE: 8pt; WIDTH: 90%; FONT-FAMILY: monospace
+}
+FIELDSET INPUT.tf {
+	FONT-SIZE: 8pt; WIDTH: 90%; FONT-FAMILY: monospace
+}
+TEXTAREA.ta {
+	FONT-SIZE: 8pt; WIDTH: 90%; FONT-FAMILY: monospace
+}
+.tf {
+	FONT-SIZE: 8pt; WIDTH: 90%; FONT-FAMILY: monospace
+}
+FIELDSET LEGEND {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 10px; PADDING-TOP: 0px
+}
+FIELDSET LEGEND SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+#jive-header {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(../images/header-background.gif); BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px; BACKGROUND-REPEAT: repeat-x; HEIGHT: 62px; BACKGROUND-COLOR: #369
+}
+#jive-header .info {
+	PADDING-RIGHT: 2em; FONT-SIZE: 8pt; COLOR: #fff; TEXT-ALIGN: right
+}
+#jive-content {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; PADDING-TOP: 1em
+}
+.header-links TD {
+	PADDING-TOP: 5px
+}
+.header-links SPAN {
+	FONT-SIZE: 10pt; COLOR: #fff; BACKGROUND-COLOR: #369
+}
+.header-links TD {
+	FONT-SIZE: 10pt; COLOR: #fff; BACKGROUND-COLOR: #369
+}
+.header-links A {
+	FONT-SIZE: 10pt; COLOR: #fff; BACKGROUND-COLOR: #369
+}
+.header-links .links {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif; TEXT-DECORATION: none
+}
+.header-links .links A {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif; TEXT-DECORATION: none
+}
+.header-links .links A:hover {
+	TEXT-DECORATION: underline
+}
+.header-links .h3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt
+}
+.header-links .selected {
+	FONT-WEIGHT: bold; TEXT-DECORATION: underline! important
+}
+#jive-header #jive-tabs UL {
+	PADDING-RIGHT: 3px; DISPLAY: inline; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 3px
+}
+#jive-header #jive-tabs LI {
+	PADDING-RIGHT: 3px; DISPLAY: inline; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 3px
+}
+#jive-header #jive-tabs LI {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+#jive-header #jive-tabs LI A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; COLOR: #cee1fa; PADDING-TOP: 3px; TEXT-DECORATION: none
+}
+#jive-header #jive-tabs LI A:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+#jive-header #jive-tabs .currentlink A {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+#logviewer .jive-tabs TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+#logviewer .jive-tabs .jive-tab {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 4px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 1px solid; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ddd
+}
+.jive-tabs .jive-tab-active {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 4px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 1px solid; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ddd
+}
+#logviewer .jive-tabs .jive-tab-active {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+#logviewer .jive-tabs .jive-spacer {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+.jive-tabs .jive-stretch {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+#logviewer .jive-tabs .jive-tab A {
+	FONT-WEIGHT: bold; COLOR: #000; TEXT-DECORATION: none
+}
+#logviewer .jive-tabs .jive-tab-active A {
+	FONT-WEIGHT: bold; COLOR: #000; TEXT-DECORATION: none
+}
+#logviewer .jive-tabs .jive-tab A:hover {
+	TEXT-DECORATION: underline
+}
+#logviewer .jive-tabs .jive-tab-active A:hover {
+	TEXT-DECORATION: underline
+}
+#jive-header #jive-logout {
+	WHITE-SPACE: nowrap
+}
+#jive-header #jive-logout A {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #cee1fa; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+#jive-header #jive-logout A:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+#jive-main #jive-title {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; PADDING-BOTTOM: 1em
+}
+#jive-main #jive-breadcrumbs {
+	FONT-SIZE: 8pt; PADDING-TOP: 2px; FONT-FAMILY: verdana; WHITE-SPACE: nowrap
+}
+#jive-main #jive-breadcrumbs A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+#jive-main #jive-breadcrumbs A:hover {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+#jive-main #jive-sidebar {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 0px
+}
+#jive-main #jive-sidebar UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: verdana, Arial, Helvetica, sans-serif; LIST-STYLE-TYPE: none
+}
+#jive-main #jive-sidebar LI {
+	MARGIN: 0px 15px 2px 0px; WIDTH: 140px
+}
+#jive-main #jive-sidebar A {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #fff 1px solid; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 2px; BORDER-LEFT: #fff 1px solid; WIDTH: 140px; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff; moz-border-radius: 3px
+}
+#jive-main #jive-sidebar A:link {
+	COLOR: #000; TEXT-DECORATION: none
+}
+#jive-main #jive-sidebar A:visited {
+	COLOR: #000; TEXT-DECORATION: none
+}
+#jive-main #jive-sidebar A:hover {
+	BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; BORDER-LEFT: #963 1px solid; BORDER-BOTTOM: #963 1px solid; BACKGROUND-COLOR: #ffc
+}
+#jive-main #jive-sidebar .currentlink A {
+	BORDER-RIGHT: #369 1px solid; BORDER-TOP: #369 1px solid; BORDER-LEFT: #369 1px solid; COLOR: #333; BORDER-BOTTOM: #369 1px solid; BACKGROUND-COLOR: #cbddee
+}
+#jive-main #jive-sidebar .currentlink A:link {
+	BORDER-RIGHT: #369 1px solid; BORDER-TOP: #369 1px solid; BORDER-LEFT: #369 1px solid; COLOR: #333; BORDER-BOTTOM: #369 1px solid; BACKGROUND-COLOR: #cbddee
+}
+#jive-main #jive-sidebar .currentlink A:visited {
+	BORDER-RIGHT: #369 1px solid; BORDER-TOP: #369 1px solid; BORDER-LEFT: #369 1px solid; COLOR: #333; BORDER-BOTTOM: #369 1px solid; BACKGROUND-COLOR: #cbddee
+}
+#jive-main #jive-sidebar .currentlink A:hover {
+	BORDER-RIGHT: #369 1px solid; BORDER-TOP: #369 1px solid; BORDER-LEFT: #369 1px solid; COLOR: #333; BORDER-BOTTOM: #369 1px solid; BACKGROUND-COLOR: #cbddee
+}
+#jive-main #jive-sidebar .category {
+	FONT-WEIGHT: bold; PADDING-BOTTOM: 0.5em; PADDING-TOP: 1.5em
+}
+#jive-main #jive-sidebar .subitems LI {
+	MARGIN-LEFT: 10px; WIDTH: 130px
+}
+#jive-main #jive-sidebar .subitems LI A {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN-LEFT: 10px; WIDTH: 120px; PADDING-TOP: 2px
+}
+#jive-runningtask {
+	MARGIN-LEFT: 1em
+}
+PRE {
+	FONT-SIZE: 10pt; FONT-FAMILY: courier new, monospaced
+}
+TT {
+	FONT-SIZE: 10pt; FONT-FAMILY: courier new, monospaced
+}
+.jive-error TABLE {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.jive-info TABLE {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.jive-success TABLE {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.jive-error TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+.jive-info TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+.jive-success TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+.jive-error-text {
+	COLOR: #f00
+}
+.jive-error .jive-icon-label {
+	COLOR: #f00
+}
+.jive-error-text A {
+	COLOR: #f00
+}
+.jive-error .jive-icon-label A {
+	COLOR: #f00
+}
+.jive-success-text {
+	COLOR: #090
+}
+.jive-success .jive-icon-label {
+	COLOR: #090
+}
+.jive-success-text A {
+	COLOR: #090
+}
+.jive-success .jive-icon-label A {
+	COLOR: #090
+}
+.jive-info-text {
+	COLOR: #306
+}
+.jive-info .jive-icon-label {
+	COLOR: #306
+}
+.jive-info-text A {
+	COLOR: #306
+}
+.jive-info .jive-icon-label A {
+	COLOR: #306
+}
+.jive-table {
+	BORDER-RIGHT: #bbb 1px solid; BORDER-TOP: #bbb 1px solid; BORDER-LEFT: #bbb 1px solid; BORDER-BOTTOM: #bbb 0px solid
+}
+.jive-table TH {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.jive-table TD {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.jive-table TH {
+	BORDER-RIGHT: #bbb 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-BOTTOM: #bbb 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #eee; TEXT-ALIGN: left
+}
+.jive-table TR TD {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+.jive-table TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.jive-table .jive-odd TD {
+	BACKGROUND-COLOR: #fff
+}
+.jive-table .jive-even TD {
+	BACKGROUND-COLOR: #eee
+}
+.jive-table TFOOT TD {
+	BORDER-RIGHT: #bbb 1px solid; FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #ddd
+}
+.jive-table TD TD {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.jive-table INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+.jive-table SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+.jive-description {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-description A {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-table .jive-date {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-description INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-description SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-label {
+	PADDING-RIGHT: 10px; WIDTH: 1%; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #eee
+}
+.jive-buttons .jive-icon {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.jive-buttons .jive-icon-label {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 3px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; WHITE-SPACE: nowrap
+}
+.jive-select {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, monospace
+}
+SELECT .hilite {
+	FONT-WEIGHT: bold! important; BACKGROUND-COLOR: #eee! important
+}
+TABLE.calBgColor {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TD.cal {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #fff
+}
+SELECT.month {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 85px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, Sans-serif
+}
+INPUT.year {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 30px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, Sans-serif
+}
+TD.calDaysColor {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #000000
+}
+TD.calWeekend {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #d3d3d3
+}
+TD.calBgColor {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #ffc
+}
+.calBorderColor {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #a9a9a9
+}
+TD.calHighlightColor {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #ffffcc
+}
+A.cal {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, Sans-serif; TEXT-DECORATION: none
+}
+A.cal:hover {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff0000; FONT-FAMILY: Arial, Helvetica, Sans-serif; TEXT-DECORATION: none
+}
+.calDisabled {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #808080; FONT-FAMILY: Arial, Helvetica, Sans-serif; TEXT-DECORATION: none
+}
+.jive-quoteheader {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 15px; WIDTH: 90%
+}
+.jive-quote {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; MARGIN-LEFT: 15px; BORDER-LEFT: #d1d7dc 1px solid; WIDTH: 90%; COLOR: #444; BORDER-BOTTOM: #d1d7dc 1px solid; BACKGROUND-COLOR: #fafafa
+}
+#jive-modpage .jive-info-message {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+#jive-modpage .jive-mark-buttons INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+#jive-modpage .jive-mark-buttons SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+#jive-modpage .jive-jump-box SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+#jive-modpage .jive-mod-msg-row TD {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+#jive-modpage .jive-mod-msg-row-app TD {
+	BORDER-BOTTOM: #999 1px solid; BACKGROUND-COLOR: #cfc
+}
+#jive-modpage .jive-mod-msg-row-rej TD {
+	BORDER-BOTTOM: #999 1px solid; BACKGROUND-COLOR: #fcc
+}
+#jive-mod-forum-box TH {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+#jive-mod-forum-box TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+#jive-mod-forum-box {
+	MARGIN-RIGHT: 8px
+}
+#jive-mod-forum-box TABLE {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+#jive-mod-forum-box TH {
+	FONT-WEIGHT: bold; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #eee; TEXT-ALIGN: left
+}
+#jive-mod-forum-box .jive-mod-forum-all TD {
+	BORDER-TOP: #ccc 1px solid
+}
+#jive-mod-forum-box LABEL {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+#jive-mod-forum-box INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+#jive-mod-forum-box SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-controlbuttons {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 6px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #eee; TEXT-ALIGN: right; moz-border-radius: 3px
+}
+.jive-error-box {
+	BORDER-RIGHT: #f00 1px solid; PADDING-RIGHT: 6px; BACKGROUND-POSITION: 6px 6px; BORDER-TOP: #f00 1px solid; PADDING-LEFT: 30px; BACKGROUND-IMAGE: url(../images/error-16x16.gif); MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 6px; BORDER-LEFT: #f00 1px solid; PADDING-TOP: 6px; BORDER-BOTTOM: #f00 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #fee; moz-border-radius: 3px
+}
+.jive-info-box {
+	BORDER-RIGHT: #00f 1px solid; PADDING-RIGHT: 6px; BACKGROUND-POSITION: 6px 6px; BORDER-TOP: #00f 1px solid; PADDING-LEFT: 30px; BACKGROUND-IMAGE: url(../images/info-16x16.gif); MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 6px; BORDER-LEFT: #00f 1px solid; PADDING-TOP: 6px; BORDER-BOTTOM: #00f 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #eef; moz-border-radius: 3px
+}
+.jive-success-box {
+	BORDER-RIGHT: #0f0 1px solid; PADDING-RIGHT: 6px; BACKGROUND-POSITION: 6px 6px; BORDER-TOP: #0f0 1px solid; PADDING-LEFT: 30px; BACKGROUND-IMAGE: url(../images/success-16x16.gif); MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 6px; BORDER-LEFT: #0f0 1px solid; PADDING-TOP: 6px; BORDER-BOTTOM: #0f0 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #efe; moz-border-radius: 3px
+}
+.jive-table-form TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.jive-table-form INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-table-form TEXTAREA {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-option-table THEAD TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; BORDER-BOTTOM: #ccc 1px solid; FONT-FAMILY: verdana, arial, helvetica, sans-serif; TEXT-ALIGN: left
+}
+.jive-option-table .jive-option-button {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.jive-table .center {
+	TEXT-ALIGN: center
+}
+.jive-table .jive-empty {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; PADDING-TOP: 1em
+}
+FIELDSET DIV.jive-padding {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 3px 0px 9px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 3px 0px 9px; PADDING-TOP: 0px
+}
+H1 {
+	FONT-SIZE: 13pt
+}
+H3 {
+	FONT-SIZE: 11pt
+}
+.jive-token-list {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.jive-token-list LI {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline
+}
+.jive-token-list LI TT {
+	FONT-SIZE: 8pt; COLOR: #666; FONT-FAMILY: monospace
+}
+.jtabs {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid; LIST-STYLE-TYPE: none
+}
+.jtabs LI {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #ccc 1px solid; DISPLAY: inline; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; MARGIN: 0px 6px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #eee
+}
+.jtabs LI.selected {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #fff
+}
+.jtabs LI A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+.jtabs LI.selected A {
+	FONT-WEIGHT: bold
+}
+.inline-list {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.inline-list LI {
+	BORDER-RIGHT: 10px; DISPLAY: inline
+}
+.jive-paginator {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, Sans-serif
+}
+.jive-paginator A {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, Sans-serif
+}
+.jive-paginator {
+	FONT-WEIGHT: bold
+}
+.jive-paginator A {
+	FONT-WEIGHT: bold
+}
+.jive-paginator A {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; BORDER-LEFT: #fff 1px solid; BORDER-BOTTOM: #fff 1px solid; TEXT-DECORATION: none
+}
+.jive-paginator A:hover {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; COLOR: #000; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #ffc; TEXT-DECORATION: none
+}
+.jive-paginator .jive-current {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; COLOR: #000; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #eee; TEXT-DECORATION: none
+}
+.errorLabel {
+	FONT-WEIGHT: bold; COLOR: #f00
+}
+.errorMessage {
+	FONT-WEIGHT: bold; COLOR: #f00
+}
+.checkboxErrorLabel {
+	COLOR: #f00
+}
+.required {
+	COLOR: #f00
+}

@@ -1,0 +1,108 @@
+P {
+	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A {
+	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.font3 {
+	COLOR: #FF0000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+TD {
+	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+LI {
+	COLOR: #595959; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.hei {
+	COLOR: #000000; FONT-SIZE: 12px; LINE-HEIGHT: 160%; TEXT-DECORATION: none
+}
+.bai {
+	COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.shenhui {
+	COLOR: #595959; FONT-SIZE: 12px; LINE-HEIGHT: 210%; TEXT-DECORATION: none
+}
+.qianhui {
+	COLOR: #7f7f7f; FONT-SIZE: 12px; LINE-HEIGHT: 160%; TEXT-DECORATION: none
+}
+.liang {
+	COLOR: #b3b3b3; FONT-SIZE: 12px; LINE-HEIGHT: 130%; TEXT-DECORATION: none
+}
+.juhong {
+	COLOR: #ff6701; FONT-SIZE: 12px; LINE-HEIGHT: 160%; TEXT-DECORATION: none
+}
+.shenlv {
+	COLOR: #0f9002; FONT-SIZE: 12px; LINE-HEIGHT: 160%; TEXT-DECORATION: none
+}
+.qianlv {
+	COLOR: #83ae54; FONT-SIZE: 12px; LINE-HEIGHT: 130%; TEXT-DECORATION: none
+}
+FORM {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+.english {
+	FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.input {
+	BORDER-BOTTOM: #7f7f7f 1px dotted; BORDER-LEFT: #7f7f7f 1px dotted; BORDER-RIGHT: #7f7f7f 1px dotted; BORDER-TOP: #7f7f7f 1px dotted; FONT-SIZE: 12px
+}
+.biaoti {
+	COLOR: #666666; FONT-SIZE: 14px; LINE-HEIGHT: 150%; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6701; TEXT-DECORATION: underline
+}
+A.juhong:hover {
+	COLOR: #0f9002; TEXT-DECORATION: underline
+}
+.kongge {
+	LINE-HEIGHT: 130%; PADDING-LEFT: 6px
+}
+TD {
+	LINE-HEIGHT: 150%
+}
+.bai1 {
+	COLOR: #ffffff; FONT-SIZE: 12px; LINE-HEIGHT: 120%; TEXT-DECORATION: none
+}
+
+.shadow {
+	FILTER: Shadow(Color=#ff3454, Direction=320)
+}
+.button {
+	BACKGROUND-COLOR: #a7aced; BORDER-BOTTOM: #000000 1px solid;
+	BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; width:60px;
+        BACKGROUND-IMG:url(../images/11.gif)£»
+¡¡¡¡
+}
+
+.button3 {
+	BACKGROUND-COLOR: #a7aced; BORDER-BOTTOM: #000000 1px solid;
+	BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px;
+        BACKGROUND-IMG:url(../images/11.gif)£»
+¡¡¡¡
+}
+.style1{
+	width:24%
+}
+.font4{
+	font-weight: normal; color: black; border-left-style: none; border-right-style: none; border-top-style: none; border-bottom: .75pt solid green; background-color: #FFFFDD
+}
+.font5{
+	font-weight: bold; color: black; border-left-style: none; border-right-style: none; border-top-style: none; border-bottom: 1.5pt solid green; background-color: #CCCCCC
+}
+
+.button2 {
+	BACKGROUND-COLOR: #a7aced; BORDER-BOTTOM: #000000 1px solid;
+	BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; width:75px;
+        BACKGROUND-IMG:url(../images/11.gif)£»
+¡¡¡¡
+}

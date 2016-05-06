@@ -1,0 +1,12 @@
+#tree {
+	font-size: 12px;
+}
+#tree a {
+	color: #000;
+	text-decoration: none;
+}
+#tree img {
+	border: 0px;
+	width: 16px;
+	height: 16px;
+}

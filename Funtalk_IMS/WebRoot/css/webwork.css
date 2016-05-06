@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.errorMessage {
+	color: red;
+}
+.required {
+	color: red;
+	font-weight:bold;
+	padding-right:5px;
+}
+.wwFormTable
+{
+	width: 99%;
+    border: 1px solid #bbbbbb;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.wwFormTable tr
+{
+	border-bottom:1px solid #EAEAEA; border-left:1px solid #EAEAEA; border-right:1px solid #EAEAEA; line-height:30px; text-indent:2px;
+}
+.tdLabel
+{
+	width: 30%;
+	background-color: #FFFFF0;
+    vertical-align: top;
+    text-align: right;
+}

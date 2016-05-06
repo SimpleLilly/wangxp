@@ -1,0 +1,6 @@
+/* CSS Document */
+#POP_TOPHint{ width:100%;line-height:34px; color:#F26521; background:url(../images/missionInfo_bg.gif) repeat-x left top;border-bottom:1px solid #DCDCDC;border-top:14px solid #D71920;}
+#POP_TOPHint .info{color:#0FB0FF}
+#POP_Content{width:100%; line-height:30px;border-top:4px solid #D9DADB; margin-top:1px; color:#727272; text-align:left}
+#POP_Content .blank{ padding:8px; width:100%;}
+#POP_Content .infoLable{ font-weight:bold; color:#000000; text-align:right;}

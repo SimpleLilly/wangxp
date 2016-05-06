@@ -1,0 +1,20 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+    <package name="statistics" extends="webwork-default" namespace="/statistics">
+
+       <default-interceptor-ref name="completeStack" />
+		
+        <!-- 根据sql生成数据 -->
+        <action name="SqlGenerateData" class="com.funtalk.action.statistics.StatAction" method="generateData"></action>	
+        <action name="SqlDayUsersData" class="com.funtalk.action.statistics.StatAction" method="getDayDevUsers"></action>
+        <action name="SqlDayUsersDataNew"   class="com.funtalk.action.statistics.StatAction" method="getDayDevUsersNew"></action>  	
+        <action name="SqlPayFeeData"   class="com.funtalk.action.statistics.StatAction" method="getDayPayFees"></action>	
+        <action name="SqlUserBillData"   class="com.funtalk.action.statistics.StatAction" method="getDayUserBills"></action>  
+        <action name="SqlMonProUserBillData"   class="com.funtalk.action.statistics.StatAction" method="getMonProUserBills"></action> 
+        <action name="SqlMonProUserStayMonData"   class="com.funtalk.action.statistics.StatAction" method="getMonProUserStayMons"></action>
+        <action name="SqlMonthEndData"   class="com.funtalk.action.statistics.StatAction" method="getMonthEnd"></action> 
+        <!--上传结算文件-->
+        <action name="UploadSettleExcel"   class="com.funtalk.action.statistics.StatAssistAction" method="upLoadSettleExcel"></action>                  	
+	</package>
+
+</xwork>

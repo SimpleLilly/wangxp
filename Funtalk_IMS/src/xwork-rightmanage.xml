@@ -1,0 +1,83 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+    <package name="rightmanage" extends="webwork-default" namespace="/rightmanage">
+
+<interceptors>
+<interceptor name="i18n" class="com.opensymphony.xwork.interceptor.I18nInterceptor">
+    <!-- on which request parameter we should react, optional, defaults to "request_locale" -->
+    <param name="parameterName">set_locale</param>
+    <!-- under which session attribute locale should be stored, optional, defaults to "WW_TRANS_I18N_LOCALE" -->
+    <param name="attributeName">ww_locale</param>
+</interceptor>
+<interceptor-stack name="i18nStack">
+    <interceptor-ref name="i18n"/>
+    <interceptor-ref name="defaultStack"/>
+</interceptor-stack>
+</interceptors>
+
+<default-interceptor-ref name="i18nStack"/>
+       <!--default-interceptor-ref name="completeStack" /-->
+       
+        <!-- 登陆 -->
+        <action name="login" class="com.funtalk.action.rightmanage.RightManageAction" method="login">
+			<result name="success">/login.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+        <!-- 登出 -->
+        <action name="logout" class="com.funtalk.action.rightmanage.RightManageAction" method="logout">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		<!-- 用户信息管理 -->
+        <action name="userList" class="com.funtalk.action.rightmanage.UserManageAction" method="list">
+			<result name="success">/rightmanage/user/list.jsp</result>
+		</action>
+		
+		<action name="UsersJsonData" class="com.funtalk.action.rightmanage.UserManageAction" method="getUsersJsonData">
+		</action>
+		
+		<action name="addUser" class="com.funtalk.action.rightmanage.UserManageAction" method="addUser">
+		</action>
+		
+		<action name="editUser" class="com.funtalk.action.rightmanage.UserManageAction" method="editUser">
+		</action>
+				
+		<action name="delUsers" class="com.funtalk.action.rightmanage.UserManageAction" method="delUsers">
+		</action>
+		
+		<action name="changepwd" class="com.funtalk.action.rightmanage.UserManageAction" method="changepwd">
+			<result name="success">/rightmanage/user/changepwd.jsp</result>
+		</action>
+		
+		<!-- 角色信息管理 -->
+        <action name="roleList" class="com.funtalk.action.rightmanage.RoleManageAction" method="list">
+			<result name="success">/rightmanage/role/list.jsp</result>
+		</action>
+		
+		<action name="RolesJsonData" class="com.funtalk.action.rightmanage.RoleManageAction" method="getRolesJsonData">
+		</action>
+		
+		<action name="addRole" class="com.funtalk.action.rightmanage.RoleManageAction" method="addRole">
+		</action>
+		
+		<action name="editRole" class="com.funtalk.action.rightmanage.RoleManageAction" method="editRole">
+		</action>
+				
+		<action name="delRoles" class="com.funtalk.action.rightmanage.RoleManageAction" method="delRoles">
+		</action>
+		<!-- 角色权限分配 -->
+		<action name="rightConfig" class="com.funtalk.action.rightmanage.RoleManageAction" method="rightConfig">
+			<result name="success">/rightmanage/role/roleRights.jsp</result>
+		</action>
+
+		<action name="saveRights" class="com.funtalk.action.rightmanage.RoleManageAction" method="saveRight">
+		</action>		
+		<!-- 系统日志管理 -->
+        <action name="logList" class="com.funtalk.action.rightmanage.LogManageAction" method="list">
+			<result name="success">/rightmanage/log/list.jsp</result>
+		</action>
+		
+		<action name="LogJsonData" class="com.funtalk.action.rightmanage.LogManageAction" method="getLogJsonData">
+		</action>
+	</package>
+</xwork>

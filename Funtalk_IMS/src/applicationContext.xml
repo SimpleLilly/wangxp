@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+<!--
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:DataConnection.properties"/> 			
+	 </bean>
+	
+	-->
+	
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+			
+		<property name="locations">
+			<list>
+				<value>classpath:DataConnection.properties</value>                   
+				<value>classpath:i18n_zh_CN.properties</value>                 
+			</list>          
+		</property>		
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    	<property name="jndiName">
+     		<value>${web.jndi}</value>
+   		</property>
+	</bean>
+	
+
+	<bean id="accountDb" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="maxPoolSize" value="${c3p0.maxPoolSize}"/>
+		<property name="minPoolSize" value="${c3p0.minPoolSize}"/>
+		<property name="maxIdleTime" value="${c3p0.maxIdleTime}"/>
+		<property name="maxStatements" value="${c3p0.maxStatements}"/>
+		<property name="acquireIncrement" value="${c3p0.acquireIncrement}"/>
+		<property name="idleConnectionTestPeriod" value="${c3p0.idleConnectionTestPeriod}"/>
+		<property name="driverClass" value="${jdbc.driverClassName}"/>
+		<property name="jdbcUrl" value="${jdbc.url}"/>
+		<property name="user" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+		
+	
+	<bean id="default" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	    <property name="dataSource" ref="dataSource"/>
+	    <property name="mappingResources">
+	      <list>
+	        <value>com/funtalk/pojo/rightmanage/User.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/Func.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/Role.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/RoleFunc.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/UserRole.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/RoleLevel.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/Log.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/UserPwdHistory.hbm.xml</value>
+	        <value>com/funtalk/pojo/rightmanage/CityList.hbm.xml</value>
+	      </list>
+	    </property>
+	    <property name="hibernateProperties">
+	      <value>
+	        hibernate.dialect=com.funtalk.common.FuntalkOracle9Dialect
+	        hibernate.show_sql=true
+	      </value>
+	    </property>
+	</bean>
+	
+	
+		<bean id="ACCOUNT" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	    <property name="dataSource" ref="accountDb"/>
+	    <property name="hibernateProperties">
+	      <value>
+	        hibernate.dialect=com.funtalk.common.FuntalkOracle9Dialect
+	        hibernate.show_sql=true
+	      </value>
+	    </property>
+	</bean>
+	
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="default" />
+		</property>
+	</bean>
+
+	<bean id="baseTransactionProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="query*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	
+	
+		<bean id="ACTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="ACCOUNT" />
+		</property>
+	</bean>
+
+	<bean id="ACBaseTransactionProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+		<property name="transactionManager">
+			<ref bean="ACTransactionManager" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="query*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+    <bean id="SpringContextUtil" class="com.funtalk.common.SpringContextUtil" />
+	
+	<bean id="rightManageService" parent="baseTransactionProxy">
+		<property name="target">
+			<bean class="com.funtalk.service.rightmanage.RightManageServiceImpl">
+				<property name="userDao" ref="userDao" />
+				<property name="roleDao" ref="roleDao" />
+				<property name="roleFuncDao" ref="roleFuncDao" />
+				<property name="userPwdHistoryDAO" ref="userPwdHistoryDAO" />
+			</bean>
+		</property>
+	</bean>
+
+	
+	<bean id="userDao" class="com.funtalk.dao.rightmanage.UserDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="default" />
+		</property>
+	</bean>
+	
+	<bean id="roleDao" class="com.funtalk.dao.rightmanage.RoleDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="default" />
+		</property>
+	</bean>	
+	<bean id="roleFuncDao" class="com.funtalk.pojo.rightmanage.RoleFuncDAO">
+		<property name="sessionFactory">
+			<ref bean="default" />
+		</property>
+	</bean>
+	
+	<bean id="userPwdHistoryDAO" class="com.funtalk.pojo.rightmanage.UserPwdHistoryDAO">
+		<property name="sessionFactory">
+			<ref bean="default" />
+		</property>
+	</bean>
+	
+	<bean id="logDao" parent="baseTransactionProxy">
+		<property name="target">
+			<bean class="com.funtalk.pojo.rightmanage.LogDAO">
+				<property name="sessionFactory" ref="default" />
+			</bean>
+		</property>
+	</bean>
+
+	
+	<bean id="DBConnection" parent="baseTransactionProxy">
+		<property name="target">
+			<bean class="com.funtalk.common.DBConnectionImpl">
+				<property name="sessionFactory" ref="default" />
+				<property name="sessionFactoryMap" ref="sessionFactoryMap" />
+			</bean>
+		</property>
+	</bean>
+	
+    <bean id="statService" parent="ACBaseTransactionProxy">
+		<property name="target">
+			<bean class="com.funtalk.service.statistics.StatServiceImpl">
+				<property name="statDao" ref="statDao" />
+			</bean>
+		</property>
+	</bean>
+    <bean id="statDao" class="com.funtalk.dao.statistics.StatDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="ACCOUNT" />
+		</property>
+	</bean>
+	
+
+    <bean id="statAssistService" parent="ACBaseTransactionProxy">
+		<property name="target">
+			<bean class="com.funtalk.service.statistics.StatAssistServiceImpl">
+				<property name="statAssistDao" ref="statAssistDao" />
+			</bean>
+		</property>
+	</bean>
+    <bean id="statAssistDao" class="com.funtalk.dao.statistics.StatAssistDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="ACCOUNT" />
+		</property>
+	</bean>
+	
+	<bean id="sessionFactoryMap" class="java.util.HashMap">
+		<constructor-arg>
+			<map>
+                <entry key="default">
+                	<ref bean="default" />
+                </entry>	
+                <entry key="ACCOUNT">
+                	<ref bean="ACCOUNT" />
+                </entry>				
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	
+</beans>

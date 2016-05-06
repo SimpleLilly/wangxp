@@ -1,0 +1,6 @@
+.x-combo-list .x-combo-list-cursor {
+	BORDER-RIGHT: #000000 1px dotted; BORDER-TOP: #000000 1px dotted; BORDER-LEFT: #000000 1px dotted; BORDER-BOTTOM: #000000 1px dotted
+}
+.x-combo-list-item {
+	MARGIN: 1px; CURSOR: pointer
+}

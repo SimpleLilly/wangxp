@@ -1,0 +1,16 @@
+
+[Add.Code]
+JSReport.ocx=JSReport.ocx
+midas.dll=midas.dll
+
+[JSReport.ocx]
+file-win32-x86=thiscab
+clsid={8140C99B-072A-4461-9A72-14983C2C3252}
+RegisterServer=yes
+DestDir=11
+FileVersion=2,2,15,0
+
+[midas.dll]
+file-win32-x86=thiscab
+DestDir=11
+FileVersion=7,1,1692,666

@@ -1,0 +1,344 @@
+/* CSS Document */
+
+body{ margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+#login{
+   margin-top:50px;
+   margin-left:100px;
+   margin-right:100px;
+   width:760px;
+}
+
+#login .top {
+	background-image:url(images/login_shandongsp.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	height: 150px;
+	width: 760px;
+}
+#login .bar {
+	background-image:url(images/login_barbg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 5px;
+}
+#login .buttom {
+	background-image:url(images/login_buttombg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 5px;
+}
+#login .bg {
+	background-color: #FFFFFF;
+	background-image: url(images/login_bg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height:150px;
+}
+#login .image{
+	background-image: url(images/login_image.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 205px;
+	width: 232px;
+}
+
+#login .bottom{
+	background-image: url(images/unicom_logo.gif);
+	background-repeat: no-repeat;
+	height: 65px;
+	width: 760px;
+}
+#login .myinput{
+	background-image: url(images/input_bg.gif);
+	background-repeat: no-repeat;
+	height: 109px;
+	width: 318px;
+	margin-left: 140px;
+	margin-top: 11px;
+	padding-top:50px;
+	text-align:center;
+}
+textarea,input,select{
+	font-family: Verdana;
+	font-size: 12px;
+	background-color: #ffffff;
+}
+#login .log_button a:link{
+	background-image:  url(images/button_normal.gif);
+	background-repeat: no-repeat;
+	height: 10px;
+	width: 56px;
+	cursor: hand;
+	color:#000;
+	font-size:12px;
+	display: block;
+	text-decoration: none;
+	padding-top:5px
+}
+#login .log_button a:visited{
+	background-image:  url(images/button_normal.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 56px;
+	cursor: hand;
+	color:#000;
+	font-size:12px;
+	display: block;
+	text-decoration: none;
+	padding-top:5px;
+}
+#login .log_button a:hover{
+	background-image: url(images/button_over.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 56px;
+	cursor: hand;
+	color:#000;
+	display: block;
+	font-size: 12px;
+	text-decoration: underline;
+	padding-top:5px;
+}
+#login .log_button a:actived{
+	background-image: url(images/button_over.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 56px;
+	cursor: hand;
+	color:#000;
+	font-size:12px;
+	display: block;
+	text-decoration: none;
+	padding-top:5px;
+}
+.title_image{
+	background-image: url(images/title_image_shandongsp2.gif);
+	background-position: right;
+	background-repeat:no-repeat;
+	height: 50px;
+	width: 100%;
+}
+.bar {
+	background-image:url(images/login_barbg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 17px;
+	padding-top:8px;
+	padding-left:15px;
+}
+
+.menu {
+	width:100%;
+	height:30px;
+	text-align:center;
+	font-size:14px;
+	background-image: url(images/menu_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.menu ul{list-style:none;}
+.menu li{
+	float:left;
+	width:100px;
+	background:url(images/list_yellow.gif) no-repeat 10px 10px;
+	line-height:30px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+}
+.menu a{display:block;text-align:center;height:30px;}
+.menu a:link{
+	color:#FFF;
+	background:url(images/list_yellow.gif) no-repeat 10px 10px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+}
+.menu a:visited{
+    color:#FFFFCC;
+    text-decoration:underline;
+    border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;}
+.menu a:hover{color:#FFF; font-weight:bold;text-decoration:none;background:url(images/list_yellow.gif) #F00 no-repeat 10px 10px;} 
+
+.bar_link {
+	color: #FFFFFF;
+	height:30px;	
+	text-align:center;
+	font-size:14px;
+	LEFT: 883px; 
+	POSITION: absolute; 
+	top: 8px;
+}
+
+#left{
+	float: left;
+	height: 550px;
+	width: 180px;
+	background-color: #EEEEEE;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #E6E6E6;
+	text-align:left;
+}
+#left .headbg{
+	background-image:url(images/left_headbg.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 26px;
+	width: 175px;
+	color:#000000;
+	font-size:12px;
+	text-align: center;
+	padding-top:10px;
+	font-weight: bold;
+}
+.form_header{
+	color: #660000;
+	background-color: #D1C6B4;
+	font-weight:bold;
+	padding:5px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #9D8164;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #F2E7D0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #9D8164;
+}
+.formwhite_bg{
+	background-color: #fff;
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.form_bg{
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.form_bolder{
+	border: 1px solid #c5beb5;
+}
+.from_yellowbg{ background-color: #f3f0dc;}
+#main {float:left;}
+#main .biaoti{
+	background-image: url(images/biaoti_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 34px;
+	padding-left: 25px;
+	padding-top:8px;
+	font-size:16px;
+	font-weight:bold;
+}
+.redlink a{color: #CC0000;text-align: right;}
+.redlink a:link{color: #FF0000;}
+.redlink a:hover{color: #990000; text-decoration: none;}
+.redlink a:visited{color: #990000;}
+.redlink a:actived{color: #990000;}
+
+.blacklink a{color: #000;text-align: right;}
+.blacklink a:link{color: #000;}
+.blacklink a:hover{color: #333; text-decoration: none;}
+.blacklink a:visited{color: #000;}
+.blacklink a:actived{color: #333;}
+
+.arrow0 {
+	FONT-SIZE: 16px; CURSOR: hand; COLOR: #CC3300; FONT-FAMILY: Webdings
+}
+.arrow1 {
+	FONT-SIZE: 16px; CURSOR: hand; COLOR: darkgreen; FONT-FAMILY: Webdings
+}
+.arrow2 {
+	FONT-SIZE: 16px; CURSOR: hand; COLOR: red; FONT-FAMILY: Webdings
+}
+.arrow3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; CURSOR: hand; COLOR: darkgreen; FONT-FAMILY: Webdings
+}
+.arrow4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; CURSOR: hand; COLOR: darkgreen; FONT-FAMILY: Webdings
+}
+
+.bottom{
+	color: #FFFFFF;
+	background-color: #A0A0A0;
+	text-align: right;
+	height: 12px;
+	padding:3px;
+}
+/*tree*/
+.tree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color:#FFFFFF?¨º?
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+	width: 90%;
+}
+.tree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.tree a {
+	color: #333;
+	text-decoration: none;
+}
+.tree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.tree a.node:hover, .dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.tree a.nodeSel {
+	background-color: #c0d2ec;
+}
+.tree .clip {
+	overflow: hidden;
+}
+
+
+.button {
+	background-color: #eee;
+	padding: 2px;
+	margin:2px;
+	border: 1px solid #999999;
+	cursor: hand;
+	text-align: center;
+	width: 50px;
+}
+
+.bg_red{
+	background-color: #feeeeb;
+	margin: 10px;
+	float: left;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #993300;
+	border-right-color: #993300;
+	border-bottom-color: #993300;
+	border-left-color: #993300;
+}
+.title_red{
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 5px;
+	background-image: url(images/submenu_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.generic_6.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ant.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/antlr.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload-1.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/dom4j.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ezmorph-1.0.4.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jcommon-1.0.0-pre2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jfreechart-1.0.0-pre2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/json-lib-2.2.2-jdk13.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ognl.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/oscore.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/rife-continuations.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-aop.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-beans.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-context.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-dao.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-hibernate.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-jdbc.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-mock.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-orm.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-remoting.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-support.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-web.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-webmvc.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/webwork-2.2.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/wwwframe.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xwork-1.2.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/poi-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/poi-ooxml-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/freemarker.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>
